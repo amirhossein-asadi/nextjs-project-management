@@ -75,7 +75,7 @@ export default function AuthForm({ mode }: { mode: "register" | "signin" }) {
                   onChange={(e) =>
                     setFormState((s) => ({
                       ...s,
-                      firstName: e.currentTarget.value,
+                      firstName: e.target.value,
                     }))
                   }
                 />
@@ -90,7 +90,7 @@ export default function AuthForm({ mode }: { mode: "register" | "signin" }) {
                   onChange={(e) =>
                     setFormState((s) => ({
                       ...s,
-                      lastName: e.currentTarget.value,
+                      lastName: e.target.value,
                     }))
                   }
                 />
@@ -106,7 +106,7 @@ export default function AuthForm({ mode }: { mode: "register" | "signin" }) {
               value={formState.email}
               className="border-solid border-gray border-2 px-6 py-2 text-lg rounded-3xl w-full"
               onChange={(e) =>
-                setFormState((s) => ({ ...s, email: e.currentTarget.value }))
+                setFormState((s) => ({ ...s, email: e.target.value }))
               }
             />
           </div>
@@ -119,7 +119,7 @@ export default function AuthForm({ mode }: { mode: "register" | "signin" }) {
               placeholder="Password"
               className="border-solid border-gray border-2 px-6 py-2 text-lg rounded-3xl w-full"
               onChange={(e) =>
-                setFormState((s) => ({ ...s, password: e.currentTarget.value }))
+                setFormState((s) => ({ ...s, password: e.target.value }))
               }
             />
           </div>
